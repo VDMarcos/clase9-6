@@ -127,9 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ContenedorPer.h" />
+    <ClInclude Include="Persona.h" />
+    <ClInclude Include="Rep1.h" />
+    <ClInclude Include="Rep2.h" />
+    <ClInclude Include="Rep3.h" />
+    <ClInclude Include="Rep4.h" />
     <ClInclude Include="Selector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ContenedorPer.cpp" />
+    <ClCompile Include="Persona.cpp" />
+    <ClCompile Include="Rep1.cpp" />
+    <ClCompile Include="Rep2.cpp" />
+    <ClCompile Include="Rep3.cpp" />
+    <ClCompile Include="Rep4.cpp" />
     <ClCompile Include="Selector.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
