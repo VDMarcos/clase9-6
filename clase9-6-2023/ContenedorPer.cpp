@@ -4,6 +4,7 @@ ContenedorPer::ContenedorPer(int n)
 {
     tam = n;
     can = 0;
+    vec = new Persona * [tam];
     for (int i = 0; i < tam; i++) {
         vec[i] = nullptr;
     }
@@ -20,7 +21,7 @@ ContenedorPer::~ContenedorPer()
 bool ContenedorPer::agregarPersona(Persona* per)
 {
     if (can < tam) {
-        vec[can++] == per;
+        vec[can++] = per;
         return true;
     }
     else {
@@ -36,6 +37,19 @@ int ContenedorPer::getTam()
 int ContenedorPer::getCant()
 {
     return can;
+}
+
+string ContenedorPer::reporteSelector(Selector* sel)
+{
+    selector = sel;
+    ContenedorPer* vecN = new ContenedorPer(20);
+    for (int i = 0; i < can; i++) {
+        if (sel->seleccionar(*vec[i]))
+            vecN->agregarPersona(vec[i]);
+    }
+    stringstream s;
+    s << vecN->toString() << endl;
+    return s.str();
 }
 
 string ContenedorPer::toString()

@@ -2,8 +2,13 @@
 
 #include"Selector.h"
 
-class Rep2 : public Selector
+class Rep2 : public Selector   //selector de lugar...
 {
-	virtual string reporte();
+private:
+	string lugar;
+public:
+	Rep2(string);
+	virtual~Rep2();
+	virtual bool seleccionar(Persona&);
 };
 

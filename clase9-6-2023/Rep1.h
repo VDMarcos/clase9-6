@@ -11,5 +11,6 @@ public:
 	Rep1(int, int);
 	virtual~Rep1();
 	virtual bool seleccionar(Persona&);
+	string toString();
 };
 

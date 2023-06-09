@@ -6,13 +6,15 @@ Rep1::~Rep1(){}
 
 bool Rep1::seleccionar(Persona& per)
 {
-	if (min == per.getEdad()) {
-		return true;
-	}
-	else if (max == per.getEdad()) {
+	if (per.getEdad() >= min && per.getEdad() <= max) {
 		return true;
 	}
 	else {
 		return false;
 	}
+}
+
+string Rep1::toString()
+{
+	return string();
 }

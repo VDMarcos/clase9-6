@@ -137,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ContenedorPer.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Rep1.cpp" />
     <ClCompile Include="Rep2.cpp" />
